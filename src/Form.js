@@ -45,41 +45,42 @@ const Form = () => {
   return (
     <div className="card">
       <div className="logo-container">
-        <img src={logo} alt="logo" className="logo" />
+        {/* <img src={logo} alt="logo" className="logo" /> */}
+        <h5>Placement Prediction</h5>
       </div>
       <h1 className="form-heading">Placement Predictor</h1>
       <form onSubmit={handleSubmit} className="score-form">
         <div className="input-group">
           <label>Total Score:</label>
-          <input type="number" name="score" value={scores.score} onChange={handleChange} placeholder="Enter Total Score" />
+          <input type="number" name="score" value={scores.score} onChange={handleChange} placeholder="Total Score / 800" />
         </div>
         <div className="input-group">
           <label>Aptitude:</label>
-          <input type="number" name="aptitude" value={scores.aptitude} onChange={handleChange} placeholder="Enter Aptitude Score" />
+          <input type="number" name="aptitude" value={scores.aptitude} onChange={handleChange} placeholder="Aptitude Score / 100" />
         </div>
         <div className="input-group">
           <label>English:</label>
-          <input type="number" name="english" value={scores.english} onChange={handleChange} placeholder="Enter English Score" />
+          <input type="number" name="english" value={scores.english} onChange={handleChange} placeholder="English Score / 100" />
         </div>
         <div className="input-group">
           <label>Quantitative:</label>
-          <input type="number" name="quantitative" value={scores.quantitative} onChange={handleChange} placeholder="Enter Quantitative Score" />
+          <input type="number" name="quantitative" value={scores.quantitative} onChange={handleChange} placeholder="Quantitative Score / 100" />
         </div>
         <div className="input-group">
           <label>Analytical:</label>
-          <input type="number" name="analytical" value={scores.analytical} onChange={handleChange} placeholder="Enter Analytical Score" />
+          <input type="number" name="analytical" value={scores.analytical} onChange={handleChange} placeholder="Analytical Score / 100" />
         </div>
         <div className="input-group">
           <label>Domain:</label>
-          <input type="number" name="domain" value={scores.domain} onChange={handleChange} placeholder="Enter Domain Score" />
+          <input type="number" name="domain" value={scores.domain} onChange={handleChange} placeholder="Domain Score / 100" />
         </div>
         <div className="input-group">
           <label>Computer Fundamentals:</label>
-          <input type="number" name="computerFundamental" value={scores.computerFundamental} onChange={handleChange} placeholder="Enter Computer Fundamentals Score" />
+          <input type="number" name="computerFundamental" value={scores.computerFundamental} onChange={handleChange} placeholder="Computer Fundamentals Score / 100" />
         </div>
         <div className="input-group">
           <label>Coding:</label>
-          <input type="number" name="coding" value={scores.coding} onChange={handleChange} placeholder="Enter Coding Score" />
+          <input type="number" name="coding" value={scores.coding} onChange={handleChange} placeholder="Coding Score / 100" />
         </div>
         <button type="submit" className="submit-button">Submit</button>
       </form>
