@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Form.css'; // Import CSS file
-import logo from './logo.png'; // Import logo image
 import PcaPrediction from './package/PcaPrediction';
 import { useNavigate } from "react-router-dom";
 
@@ -44,9 +43,6 @@ const Form = () => {
 
   return (
     <div className="card">
-      <div className="logo-container">
-        <h5>Placement Prediction</h5>
-      </div>
       <h1 className="form-heading">Placement Predictor</h1>
       <form onSubmit={handleSubmit} className="score-form">
         <div className="input-group">
