@@ -45,7 +45,6 @@ const Form = () => {
   return (
     <div className="card">
       <div className="logo-container">
-        {/* <img src={logo} alt="logo" className="logo" /> */}
         <h5>Placement Prediction</h5>
       </div>
       <h1 className="form-heading">Placement Predictor</h1>
